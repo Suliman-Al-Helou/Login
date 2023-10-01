@@ -12,6 +12,12 @@ section {
   background-color: #1c1d21;
 }
 
+@media (max-width: 767px) {
+  section {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
 .left-side {
   width: 100%;
   display: flex;
@@ -31,11 +37,13 @@ section {
 .left-side form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 381px;
   gap: 20px;
 }
 .left-side form input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3882352941);
-  width: 381px;
+  width: 100%;
   background: none;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -105,6 +113,12 @@ section {
   color: rgba(255, 255, 255, 0.664);
 }
 
+@media (max-width: 767px) {
+  .left-side {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .right-side {
   width: 100%;
   background-color: #9c6fe4;
