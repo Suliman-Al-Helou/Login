@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  background-color: #1c1d21;
+}
+
+.left-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-side .text-content h2 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.left-side .text-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 48px;
+}
+.left-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-side form input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3882352941);
+  width: 381px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+.left-side form input:focus {
+  outline: none;
+}
+.left-side form input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.left-side form input:focus::placeholder {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.left-side form a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  margin-top: 24px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.left-side form a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.left-side form button {
+  background-color: #9c6fe4;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 48px;
+}
+.left-side .sign-up {
+  margin-top: 202px;
+  display: flex;
+  align-items: center;
+  gap: 67px;
+}
+.left-side .sign-up a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.left-side .sign-up a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.left-side .sign-up button {
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #333437;
+  border: none;
+  transition: all 0.3s;
+}
+.left-side .sign-up button:hover {
+  background-color: rgba(49, 50, 54, 0.368627451);
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.right-side {
+  width: 100%;
+  background-color: #9c6fe4;
+  padding-bottom: 50px;
+}
+.right-side .text-content {
+  text-align: center;
+  margin-top: 40px;
+}
+.right-side .text-content h1 {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 50px;
+  transition: all 2s;
+}
+.right-side .text-content h1 span {
+  display: block;
+  margin-bottom: 10px;
+}
+.right-side .text-content p {
+  color: white;
+}
+.right-side .text-content:hover h1 {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.307);
+}
+.right-side .image {
+  display: flex;
+  justify-content: center;
+  animation-name: top-bottom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.right-side .image img {
+  width: 100%;
+}
+
+@keyframes top-bottom {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}/*# sourceMappingURL=main.css.map */
